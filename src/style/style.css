@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+
+button {
+  font-family: 'Space Mono', monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border-bottom: 1px solid #f3f3f3;
+  padding: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+input {
+  border: none;
+  font-style: italic;
+  font-family: 'Space Mono', monospace;
+}
+
+input:focus {
+  outline: none;
+}
+
+.icn-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #414141;
+  transition: all 0.4s ease 0s;
+}
+
+.icn-btn:hover {
+  font-size: 25px;
+  transition: all 0.4s ease 0s;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.13);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 30%;
+  }
+}
+
+.container .lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .ul-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .ul-li div {
+  display: flex;
+  align-items: center;
+}
+
+.container .ul-li .checkbox {
+  margin-right: 20px;
+}
+
+.container .ul-li div .checkbox {
+  margin-right: 20px;
+}
+
+.container .ul-li .del-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.container .ul-li .del-btn:hover {
+  color: lightcoral;
+}
+
+.container .clear-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.container .clear-btn:hover {
+  text-decoration: underline;
+  color: lightcoral;
+}
